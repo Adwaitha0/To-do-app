@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const MONGO_URI: string = process.env.MONGO_URI || ""
+console.log("MONGO_URI from .env:", MONGO_URI);
 
 const connectDB = async (): Promise<void> => {
     try {

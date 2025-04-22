@@ -11,6 +11,7 @@ import mongoose from "mongoose";
 import dotenv from 'dotenv';
 dotenv.config();
 const MONGO_URI = process.env.MONGO_URI || "";
+console.log("MONGO_URI from .env:", MONGO_URI);
 const connectDB = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         yield mongoose.connect(MONGO_URI, {
